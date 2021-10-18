@@ -49,5 +49,24 @@ if(hacker1.length == hacker2.length){
   console.log("What?! You both have the same name?")
 };
 
+// Bonus 1
 
+const string = ""; //store your string here
+
+let words = 0;
+let foundSpace = true;
+
+for (let i = 0; i< string.length; i++){
+  if (string[i] == " "){
+    foundSpace = true;
+  }  
+  if (((string[i] >= 'a' && string[i] <= 'z') || (string[i] >= 'A' && string[i] <= 'Z')) && foundSpace == true){
+    foundSpace = false;
+    words++;
+  }
+}
+
+console.log(words)
+
+//I didn't have time to do the 2nd part of this one (counting 'et' words)
 
